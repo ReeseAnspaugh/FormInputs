@@ -14,3 +14,11 @@ def process_inputs():
     freeform = request.form.get('input_freeform', '')
     return render_template("main_page.html", input_data=dropdown,
                            output="You're a wizard %s." % name)
+#make a which disney princess are you?
+#if favorite color is blue, one point to Cinderella, Ariel, and Elsa
+#if favorite color is pink, one point to Sleeping Beauty
+#if favorite color is yellow, one point to Belle and Snow White
+#if favortie color is purple, one point to Jasmine and Rapunzal
+#if favorite color is red, one point to Anna and Merida
+#if favorite color is orange, one point to Mulan, Pohantas, and Moana
+
