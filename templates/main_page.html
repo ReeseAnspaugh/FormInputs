@@ -12,39 +12,59 @@
   </head>
   <body>
     <div id="banner" class="container">
-      <h1 class="display-4">Hello, world!</h1>
+      <h1 class="display-4">Which Disney Princess are you?</h1>
     </div>
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
-          <label for="input_name">First Name</label>
+          <label for="input_name">Name</label>
           <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
+          <label for="input_dropdown">Favorite Color</label>
           <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+            <option>Blue</option>
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Pink</option>
+            <option>Yellow</option>
+            <option>Purple</option>
+            <option>Green</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_select">Example multiple select</label>
+          <label for="input_select">What is your favorite Snack?</label>
           <select multiple class="form-control" name="input_select" id="input_select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Fries</option>
+            <option>Chips</option>
+            <option>Yogurt</option>
+            <option>Candy</option>
+            <option>Carrots</option>
+            <option>Other</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_freeform">Example textarea</label>
-          <textarea class="form-control" name="input_freeform" id="input_freeform" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <label for="input_dropdown">Favorite Place</label>
+          <select class="form-control" name="input_dropdown" id="input_dropdown">
+            <option>The Beach</option>
+            <option>Your Room</option>
+            <option>The Woods</option>
+            <option>The Kitchen</option>
+            <option>The Mall</option>
+          </select>
+           <div class="form-group">
+          <label for="input_dropdown">What do you during the weekend?</label>
+          <select class="form-control" name="input_dropdown" id="input_dropdown">
+            <option>Hang out with friends</option>
+            <option>Read</option>
+            <option>Do Chores</option>
+            <option>Bake</option>
+            <option>Watch Movies</option>
+            <option>Dance</option>
+            <option>Travel</option>
+          </select>
+
+          <input type="submit"
       </form>
     </div>
     <div class="container">
